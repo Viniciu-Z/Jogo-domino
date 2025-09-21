@@ -1,0 +1,14 @@
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\bin\Debug\net8.0\Projeto_01.exe
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\bin\Debug\net8.0\Projeto_01.deps.json
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\bin\Debug\net8.0\Projeto_01.runtimeconfig.json
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\bin\Debug\net8.0\Projeto_01.dll
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\bin\Debug\net8.0\Projeto_01.pdb
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.AssemblyInfoInputs.cache
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.AssemblyInfo.cs
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.csproj.CoreCompileInputs.cache
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.dll
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\refint\Projeto_01.dll
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.pdb
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.genruntimeconfig.cache
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\ref\Projeto_01.dll
