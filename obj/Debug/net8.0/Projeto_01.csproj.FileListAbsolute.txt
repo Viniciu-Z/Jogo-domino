@@ -12,3 +12,4 @@ C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\refint\Pro
 C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.pdb
 C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.genruntimeconfig.cache
 C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\ref\Projeto_01.dll
+C:\Users\vinicius\source\repos\Projeto_01\Projeto_01\obj\Debug\net8.0\Projeto_01.sourcelink.json

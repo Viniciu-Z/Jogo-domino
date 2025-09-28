@@ -17,7 +17,7 @@ atual do jogador, a quantidade de peças na mão do adversário, as peças em ca
 quantidade de peças disponíveis para compra em cada turno.
 Regras do jogo de dominó:
 
-• O jogo começa com um conjunto de 28 peças únicas e diferentes, variando de
+• O jogo começa com um conjunto de 28 peças únicas e diferentes, variando de 
 [0|0] até [6|6].
 
 • Cada jogador começa comprando 7 peças.
@@ -38,3 +38,51 @@ jogador pode escolher em que lado quer jogar a peça.
 
 • Após a jogada, a peça jogada deve se conectar à peça que estava em mesa pelo
 lado com o número em comum, formando assim uma sequência linear de peças.
+
+Embaralhar e distribuir peças para os jogadores
+
+Criar dois jogadores.
+
+Cada jogador recebe 7 peças.
+
+O restante fica como "monte de compra".
+
+👉 Isso vai exigir:
+
+Uma classe Jogador que tenha List<Peca> Mao.
+
+Um método em JogoDomino para embaralhar (Random) e distribuir.
+
+🔹 Depois disso
+
+Definir quem começa
+
+Verificar quem tem a maior dupla.
+
+Se ninguém tiver, comparar pelas regras que você listou (soma > maior número).
+
+Simular os turnos
+
+Exibir:
+
+Mão do jogador da vez.
+
+Número de peças do adversário.
+
+Peças na mesa.
+
+Quantidade no monte.
+
+Implementar as regras:
+
+Jogar uma peça válida (encaixa nos lados).
+
+Comprar até poder jogar ou passar a vez.
+
+🔹 Mais adiante
+
+Salvar e carregar o estado do jogo
+
+Serializar os dados para arquivo (JSON ou XML).
+
+Permitir retomar a partida do ponto salvo.
