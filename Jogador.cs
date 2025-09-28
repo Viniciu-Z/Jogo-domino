@@ -1,7 +1,7 @@
 ﻿namespace Projeto_01;
 public class Jogador
 {
-    private string Nome { get; set; }
+    public string Nome { get; private set; }
     public List<Peca> Mao { get; private set; }
 
     public Jogador(string nome)
@@ -10,7 +10,7 @@ public class Jogador
         this.Mao = new List<Peca>();
     }
 
-    public void gerarMao(List<Peca> pecas)
+    public void GerarMao(List<Peca> pecas)
     {
         Random random = new Random();
 
@@ -25,7 +25,7 @@ public class Jogador
 
     }
 
-    public void mostrarMao()
+    public void MostrarMao()
     {
         Console.WriteLine($"Jogador {Nome}");
         foreach (Peca peca in Mao)

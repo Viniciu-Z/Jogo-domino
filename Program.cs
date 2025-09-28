@@ -11,12 +11,15 @@ class Program
         Jogador j1 = new Jogador("Vinicius");
         Jogador j2 = new Jogador("Terezinho");
 
-        j1.gerarMao(pecas);
-        j2.gerarMao(pecas);
+        j1.GerarMao(pecas);
+        j2.GerarMao(pecas);
 
-        j1.mostrarMao();
-        j2.mostrarMao();
+        j1.MostrarMao();
+        j2.MostrarMao();
 
+        Console.WriteLine();
+
+        jogo.PrimeiroJogador(j1, j2);
 
         Console.WriteLine("Domino: ");
         foreach (Peca p in pecas)

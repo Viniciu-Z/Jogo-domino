@@ -26,6 +26,13 @@ Regras do jogo de dominó:
 uma dupla, o que tiver a maior soma inicia. Em caso de empate na soma, o
 jogador com a peça de maior número em sua composição começa.
 
+1 - Verificar se um dos jogadores tem peca dupla
+1.1 - se um tem e o outro não, o que tem é o primeiro
+2 - se ambos tem, pegar as pecas duplas maiores de ambos e comparar, a maios define o primeiro
+3 - se nenhum tiver dupla, é primeiro o que contiver a maior soma inicial da mão 
+4.1 - se mesmo assim houver empate, ganha aquele que tiver a maior peca unica como maior soma
+4 - caso a 4.1 for empate, o primeiro jogdor sera o j1
+
 • Em cada vez, o jogador deve realizar uma das três ações: jogar uma peça de sua
 mão, comprar peças da mesa até que seja possível jogar ou passar a vez, se todas
 as peças da mesa estiverem esgotadas.
