@@ -1,14 +1,20 @@
-﻿using System.Collections.Generic;
-
-namespace Projeto_01
+﻿namespace Projeto_01
 {
     public class JogoDomino
     {
+        private List<Peca> mesa;
+
+        public JogoDomino()
+        {
+            mesa = new List<Peca>();
+        }
+
+        // Gera as 28 peças do dominó
         public List<Peca> GerarDomino()
         {
             List<Peca> pecas = new List<Peca>();
 
-            for (int i = 0; i <= 6; i++)  
+            for (int i = 0; i <= 6; i++)
             {
                 for (int j = i; j <= 6; j++)
                 {
@@ -19,12 +25,12 @@ namespace Projeto_01
             return pecas;
         }
 
+        // Decide quem é o primeiro jogador
         public Jogador PrimeiroJogador(Jogador j1, Jogador j2)
         {
             Peca MaiorDuplaJ1 = null;
             Peca MaiorDuplaJ2 = null;
 
-            // Verifica as maiores duplas de cada jogador
             foreach (Peca peca in j1.Mao)
             {
                 if (peca.Lado1 == peca.Lado2)
@@ -47,7 +53,6 @@ namespace Projeto_01
                 }
             }
 
-            // Caso os dois tenham duplas
             if (MaiorDuplaJ1 != null && MaiorDuplaJ2 != null)
             {
                 if (MaiorDuplaJ1.Lado1 >= MaiorDuplaJ2.Lado1)
@@ -62,21 +67,19 @@ namespace Projeto_01
                 }
             }
 
-            // Se apenas o Jogador 1 tem dupla
             if (MaiorDuplaJ1 != null)
             {
                 Console.WriteLine($"{j1.Nome} começa porque possui a dupla {MaiorDuplaJ1.Mostrar()}");
                 return j1;
             }
 
-            // Se apenas o Jogador 2 tem dupla
             if (MaiorDuplaJ2 != null)
             {
                 Console.WriteLine($"{j2.Nome} começa porque possui a dupla {MaiorDuplaJ2.Mostrar()}");
                 return j2;
             }
 
-            // Nenhum tem dupla -> decide pela peça de maior soma
+            // Nenhuma dupla -> decide pela maior soma
             Peca PecaMaiorj1 = null;
             int somaPecaj1 = -1;
 
@@ -115,7 +118,69 @@ namespace Projeto_01
             }
         }
 
+        // Mostrar a mesa
+        public void MostrarMesa()
+        {
+            Console.Write("Mesa: ");
+            foreach (var peca in mesa)
+            {
+                Console.Write(peca.Mostrar() + " ");
+            }
+            Console.WriteLine();
+        }
 
+        // Valor da esquerda
+        public int EsquerdaDaMesa()
+        {
+            return mesa.Count == 0 ? -1 : mesa.First().Lado1;
+        }
 
+        // Valor da direita
+        public int DireitaDaMesa()
+        {
+            return mesa.Count == 0 ? -1 : mesa.Last().Lado2;
+        }
+
+        // Colocar peça à esquerda
+        public void ColocarEsquerda(Peca peca)
+        {
+            if (mesa.Count == 0)
+            {
+                mesa.Add(peca);
+                return;
+            }
+
+            int valorEsquerda = EsquerdaDaMesa();
+
+            if (peca.Lado1 == valorEsquerda)
+            {
+                mesa.Insert(0, new Peca(peca.Lado2, peca.Lado1));
+            }
+            else if (peca.Lado2 == valorEsquerda)
+            {
+                mesa.Insert(0, peca);
+            }
+        }
+
+        // Colocar peça à direita
+        public void ColocarDireita(Peca peca)
+        {
+            if (mesa.Count == 0)
+            {
+                mesa.Add(peca);
+                return;
+            }
+
+            int valorDireita = DireitaDaMesa();
+
+            if (peca.Lado1 == valorDireita)
+            {
+                mesa.Add(peca);
+            }
+            else if (peca.Lado2 == valorDireita)
+            {
+                mesa.Add(new Peca(peca.Lado2, peca.Lado1));
+            }
+        }
     }
 }

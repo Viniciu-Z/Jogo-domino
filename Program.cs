@@ -21,10 +21,14 @@ class Program
 
         jogo.PrimeiroJogador(j1, j2);
 
+        Console.WriteLine();
+
         Console.WriteLine("Domino: ");
         foreach (Peca p in pecas)
         {
             Console.Write(p.Mostrar() + " ");
         }
+
+        Console.WriteLine();
     }
 }
