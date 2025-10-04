@@ -15,5 +15,10 @@
         {
             return $"[{Lado1}|{Lado2}]";
         }
+
+        public Peca Virar()
+        {
+            return new Peca(Lado2, Lado1);
+        }
     }
 }
